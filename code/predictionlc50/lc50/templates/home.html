@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/predictionlc50/lc50/static/css/home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <link rel="stylesheet"  href='{% static "lc50/css/home.css"%}'>
+</head>
+
+<body>
+    <!-- <h1>QSAR Models</h1> -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/pre_train">Training</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right_nav">
+                <input type="text" placeholder="Search">
+                <button class="search_btn">Search</button>
+
+            </div>
+
+
+
+        </div>
+    </nav>
+
+    <section class="section1">
+        <p class="heading1">QSAR MODEL</p>
+        <div class="para">
+            <p>Here we are providing the system in which you can calculate the concentration of LC50.
+                In this you need to provide the 6 molecular descriptors.
+            </p>
+            <p>6 molecular descriptors are:-
+                1) CIC0
+                2) SM1_Dz(Z)
+                3) GATS1i
+                4) NdsCH
+                5) NdssC
+                6) MLOGP
+            </p>
+
+        </div><div class="para2">
+            <p>To calculate the concentration of LC50 click below-</p>
+        </div>
+        <div class="button">
+           <a href="/prediction"><button class="cal_btn">Calculate</button></a> 
+        </div>
+    </section>
+    <footer class="footer">
+        <p>Copyright %copy:QSAR MODEL- All rights are reserved</p>
+    </footer>
+</body>
+
+</html>

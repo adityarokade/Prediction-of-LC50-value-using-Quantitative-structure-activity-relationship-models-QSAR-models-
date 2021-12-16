@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+body{
+    /* background-color: brown; */
+    background-image: url(../img/nature2.jpeg);
+    background-size: cover;
+
+
+}
+.heading{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    color: blueviolet;
+}
+.inputtable{
+    margin: auto;
+    width: 550px;
+    height: auto;
+    border: 2px solid #00ffe7;
+    border-radius: 20px;
+    background-image: url(../img/nature2.jpeg);
+    background-size: cover;
+}
+.innerdiv{
+    margin: 20px;
+    
+}
+.label{
+    color: rgb(247, 244, 74);
+    /* color: brown; */
+    margin-left: 25px;
+    /* padding-bottom: 20px; */
+}
+td{
+    border-spacing: 8px 8px;
+}
+/* table{
+    border-spacing: 15px;
+    
+} */
+.input{
+    margin-left: 40px;
+    /* border: 0.5px solid red; */
+    /* margin-top: 20px; */
+}
+.input input{
+    border-radius: 15px;
+    border: 0.5ps solid black;
+    padding:2px;
+    margin: 5px;
+}
+
+.submit{
+    margin-left: 200px;
+    margin-top: 15px;
+    
+    /* width: 30px; */
+}
+.submit:hover{
+    background-color: chartreuse;
+}
+.back a{
+    margin-left: 20px;
+    color: darkblue;
+
+}
+.back a:hover{
+    color: red;
+}

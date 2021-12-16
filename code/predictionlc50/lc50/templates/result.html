@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="../static/lc50/css/result.css">
+    <link rel="stylesheet" href='{% static "lc50/css/result.css"%}'>
+</head>
+
+<body>
+    <div class="heading">
+        <p>result</p>
+    </div>
+    {% if data %}
+    <div class="table">
+        <table>
+            <tr>
+                <th>User_name</th>
+                <th>Lab_name</th>
+                <th>Email</th>
+                <th>CIC0</th>
+                <th>SM1_Dz</th>
+                <th>GATS1i</th>
+                <th>NdsCH</th>
+                <th>NdssC</th>
+                <th>MLOGP</th>
+                <th >Concentration_LC50</th>
+            </tr>
+
+            <tr>
+            <td>{{data.User_name}}</td>
+            <td>{{data.Lab_name}}</td>
+            <td>{{data.Email}}</td>
+            <td>{{data.CIC0}}</td>
+            <td>{{data.SM1_Dz}}</td>
+            <td>{{data.GATS1i}}</td>
+            <td>{{data.NdsCH}}</td>
+            <td>{{data.NdssC}}</td>
+            <td>{{data.MLOGP}}</td>
+            <td style="background-color: yellow; color: tomato;">{{data.Concentration_LC50}}</td>
+            
+        </tr>
+            <!-- <tr>
+                <td>adii</td>
+                <td>djbvhksgvhgsjhgvbsjh</td>
+                <td>scjbdkcbk@hdbvksb</td>
+                <td>3.456</td>
+                <td>3.456</td>
+                <td>3.456</td>
+                <td>3.456</td>
+                <td>3.456</td>
+                <td>3.456</td>
+                <td>3.456</td>
+
+            </tr> -->
+
+        </table>
+    </div>
+    {% endif %}
+
+    <div class="back">
+        <a class="backa" href="/prediction">Go Back</a>
+    </div>
+</body>
+
+</html>
